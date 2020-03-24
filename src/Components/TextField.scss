@@ -62,3 +62,12 @@
     background-color: #778899;
 }
 
+.mds-textfield__input:focus ~ .mds-floating__label,    
+.mds-textfield__input:valid ~ .mds-floating__label {                        
+    left: 52px;                                                                    
+    top: 5px;                                                           
+    font-size: 14px;
+    font-weight:bold;                           
+    color: black;
+    opacity: 0.5;   
+}
