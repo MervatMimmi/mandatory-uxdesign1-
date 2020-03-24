@@ -1,7 +1,7 @@
 .mds-checkbox {
     width: 36px;
     height: 20px;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-left: 40px;
     position: relative;
     cursor: pointer;
@@ -24,7 +24,6 @@
     background: #778899;
     position: relative;
     transform: background-color 200ms;
-    
 }
 
 .mds-checkbox__input:checked + .mds-checkbox__label .mds-checkbox__checkmark {
@@ -40,3 +39,16 @@
     position: absolute;
 } 
 
+.mds-checkbox__parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.mds-checkbox__text {
+    margin-top: 45px;
+    margin-left: 100px;
+    height: 32.5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}

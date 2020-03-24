@@ -4,10 +4,10 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    width: 200px;
+    width: 130px;
     height: 36px;
-    margin: 40px;
-    margin-top: 75px;
+    margin: 8px;
+    margin-top: 25px;
     cursor: pointer;
 }
 
@@ -28,7 +28,6 @@
     background: #778899;
     position: relative;
     transform: background-color 200ms;
-    
 }
 
 .mds-radiobutton__input:checked + .mds-radiobutton__label .mds-radiobutton__button {
@@ -44,3 +43,17 @@
     box-shadow: 0 0 2px 0#0a0a0a ;
     transition: all 200ms ease-in-out;
 } 
+
+.mds-radiobutton__parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.mds-radiobutton__text {
+    margin-top: 25px;
+    margin-left: 30px;
+    height: 32.5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}

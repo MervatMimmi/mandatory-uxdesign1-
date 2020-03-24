@@ -3,8 +3,8 @@ import './RadioButton.scss';
 
 export default function RadioButton({isOnRadio, onColorRadio, handleToggleRadio}) {
     
-    
     return(
+        <div className = 'mds-radiobutton__parent'>
         <div className = 'mds-radiobutton'>
             <input className = 'mds-radiobutton__input'
                 id = 'basic-radio__one'
@@ -30,6 +30,8 @@ export default function RadioButton({isOnRadio, onColorRadio, handleToggleRadio}
                 htmlFor='basic-radio__two'>
                 <span className = 'mds-radiobutton__button'></span> 
             </label>
+        </div>
+        <p className = 'mds-radiobutton__text'>Choose a button</p>
         </div>
     );
 }
