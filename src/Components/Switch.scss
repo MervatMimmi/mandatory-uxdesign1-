@@ -1,0 +1,52 @@
+.mds-switch {
+    width: 36px;
+    margin-top: 30px;
+    margin-left: 40px;
+    position: relative;
+}
+
+.mds-switch__input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.mds-switch__label {
+    width: 75px;
+    height: 32.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background:#778899;
+    border-radius: 100px;
+    position: relative;
+    transition: background-color 200ms;
+}
+
+.mds-switch__label .mds-switch__button {
+    content: '';
+    left: 2px;
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    transition: 200ms;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 2px 0 #0a0a0a;
+}
+
+.mds-switch__input:checked + .mds-switch__label .mds-switch__button {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+}
+
+.mds-switch__label:active .mds-switch__button {
+    width: 40px;
+}
+
+.mds-switch__parent {
+    display: flex;
+    flex-direction: row;
+    
+}

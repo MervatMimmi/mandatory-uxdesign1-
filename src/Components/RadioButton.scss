@@ -1,0 +1,46 @@
+.mds-radiobutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 200px;
+    height: 36px;
+    margin: 40px;
+    margin-top: 75px;
+    cursor: pointer;
+}
+
+.mds-radiobutton__input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.mds-radiobutton__label {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background: #778899;
+    position: relative;
+    transform: background-color 200ms;
+    
+}
+
+.mds-radiobutton__input:checked + .mds-radiobutton__label .mds-radiobutton__button {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    left: 2.5px;
+    top:2.5px;
+    transition: 200ms;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 2px 0#0a0a0a ;
+    transition: all 200ms ease-in-out;
+} 

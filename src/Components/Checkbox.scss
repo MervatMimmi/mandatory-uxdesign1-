@@ -1,0 +1,42 @@
+.mds-checkbox {
+    width: 36px;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mds-checkbox__input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.mds-checkbox__label {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background: #778899;
+    position: relative;
+    transform: background-color 200ms;
+    
+}
+
+.mds-checkbox__input:checked + .mds-checkbox__label .mds-checkbox__checkmark {
+    left: 10px;
+    top: 4px;
+    width: 8px;
+    height: 16px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+} 
+

@@ -1,0 +1,65 @@
+.mds-textfield {
+    margin-top: 30px;
+    position: relative;
+}
+
+.mds-textfield__input {
+    width: 280px;
+    height: 56px;
+    padding-left: 12px; 
+    padding-top: 13px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 1px solid #35628e;
+    font-size: 16px;
+    outline: none;
+    background-color: #778899;
+    opacity: 0.5;
+}
+
+.mds-textfield__input:focus {
+    opacity: 1;
+}
+
+
+.mds-floating__label {
+    position: absolute;
+    bottom: 20px;
+    left:52px;
+    font-size: 16px;
+    transition: all 150ms ease-in;
+    color: black;
+}
+
+.mds-textfield__input:focus ~ .mds-floating__label {
+    left: 52px;
+    top: 5px;
+    font-size: 14px;
+    font-weight:bold;
+    color: black;
+    opacity: 0.5;
+}
+
+.mds-textfield__underline {
+    width: 0;
+    height: 2px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #35628e;
+    transition: 200ms linear;
+}
+
+.mds-textfield__input:focus ~ .mds-textfield__underline {
+    width: 280px;
+}
+
+.mds-textfield__input:valid + .mds-floating__label{
+    background-color: #778899;
+}
+
