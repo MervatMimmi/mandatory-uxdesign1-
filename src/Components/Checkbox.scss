@@ -52,3 +52,12 @@
     align-items: center;
     position: relative;
 }
+
+.mds-checkbox__input:hover + .mds-checkbox__label,
+.mds-checkbox__input:focus + .mds-checkbox__label {
+    border: 0.1rem solid #0a0a0a ;
+}
+.mds-checkbox__input:hover + .mds-checkbox__button:before,
+.mds-checkbox__input:focus +.mds-checkbox__button::before {
+    background: #0a0a0a ;
+}

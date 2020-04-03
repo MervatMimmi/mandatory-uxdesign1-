@@ -15,7 +15,9 @@ export default function RadioButton({isOnRadio, onColorRadio, handleToggleRadio}
                 />
             <label className = 'mds-radiobutton__label'
                 style = {{background: isOnRadio  && onColorRadio }}
-                htmlFor='basic-radio__one'>
+                htmlFor='basic-radio__one'
+                tabIndex = '0'
+                >
                 <span className = 'mds-radiobutton__button'></span> 
             </label>
             <input className = 'mds-radiobutton__input'
@@ -27,7 +29,8 @@ export default function RadioButton({isOnRadio, onColorRadio, handleToggleRadio}
                 />
             <label className = 'mds-radiobutton__label'
                 style = {{background: isOnRadio  && onColorRadio }}
-                htmlFor='basic-radio__two'>
+                htmlFor='basic-radio__two'
+                tabIndex = '0'>
                 <span className = 'mds-radiobutton__button'></span> 
             </label>
         </div>

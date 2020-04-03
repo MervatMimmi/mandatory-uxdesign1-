@@ -11,11 +11,17 @@ export default function Main(){
     const [isChecked, setIsChecked] = useState(false);
     const [isRadio, setIsRadio] = useState('');
     const [disable, updateDisable] = useState(false);
+    const [inputValue, updateInputValue] = useState('');
     const [buttonText, updateButtonText] = useState('DISABLE');
 
     function onClick(){
         updateDisable(!disable);
         updateButtonText(buttonText === 'DISABLE' ? 'ENABLE': 'DISABLE');
+    }
+
+    function onChange(e) {
+        e.preventDefault();
+        updateInputValue(e.target.value);
     }
 
     return(
@@ -24,7 +30,10 @@ export default function Main(){
             <div className = 'parent-container'>
                 <Header/>
                 <div style = {disable ? {pointerEvents: 'none', opacity: '0.4'} : {}}>
-                    <TextField/>
+                    <TextField
+                        value ={inputValue}
+                        onChange = {onChange}
+                    />
                     <Switch
                         isOn = {value}
                         onColor = '#35628e'
@@ -36,7 +45,7 @@ export default function Main(){
                         handleToggleCheck={() => setIsChecked(!isChecked)}
                         />
                     <RadioButton
-                        isOnRadio = {isRadio}
+                        value = {isRadio}
                         onColorRadio = '#35628e'
                         handleToggleRadio = {(e) => setIsRadio(e.target.value)}
                         />

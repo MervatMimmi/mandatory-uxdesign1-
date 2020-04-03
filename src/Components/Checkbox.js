@@ -13,6 +13,7 @@ export default function Checkbox({isOnCheck, handleToggleCheck,onColorCheck}) {
                     />
                 <label className = 'mds-checkbox__label'
                     htmlFor = 'basic-checkbox'
+                    tabIndex = '0'
                     style = {{background: isOnCheck && onColorCheck }}
                     >
                     <span className = 'mds-checkbox__checkmark'></span>

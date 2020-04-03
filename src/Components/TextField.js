@@ -1,8 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './TextField.scss';
 
-export default function TextField() {
-    const [inputValue, updateInputValue] = useState('');
+export default function TextField({inputValue, onChange}) {
 
     return(
         <div className = 'mds-textfield'>
@@ -10,7 +9,7 @@ export default function TextField() {
                    type = 'text'
                    value = {inputValue}
                    required
-                   onChange = {(e)=> updateInputValue(e.target.value)}/>
+                   onChange = {onChange}/>
             <div className = 'mds-textfield__underline'></div>
             <label className = 'mds-floating__label'>Name</label>
         </div>
